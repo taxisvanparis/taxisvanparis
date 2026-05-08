@@ -3,131 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- SEO : Mots-clés pour le référencement 95, 92, 78 et Gares/Aéroports -->
-    <title>Taxi Van Paris | Réservation 95, 92, 78 | Aéroports & Gares</title>
-    <meta name="description" content="Réservez votre Van taxi dans le 95, 92, 78. Transferts Aéroports (CDG, Orly) et Gares Parisiennes. Sièges bébé et réhausseurs inclus. Van 7-8 places.">
-    <meta name="keywords" content="Van Paris, Taxi 95, Taxi 92, Taxi 78, Réservation Van Aéroport, Van Gare du Nord, Van Gare de Lyon, Siège bébé taxi, Van 8 places Val d'Oise, Van Yvelines, Van Hauts-de-Seine">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Taxi Van Paris - Réservation Officielle</title>
     <style>
-        .hero-bg {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
-                        url('https://images.unsplash.com/photo-1559297434-2d8a1e929ff7?auto=format&fit=crop&q=80&w=1000');
-            background-size: cover;
-            background-position: center;
-        }
+        :root { --gold: #c9a24a; --dark: #0b0b0b; --white: #f4f4f4; --grey: #1a1a1a; }
+        body { font-family: 'Segoe UI', sans-serif; background-color: var(--dark); color: var(--white); margin: 0; padding: 15px; }
+        .container { background: var(--grey); padding: 20px; border-radius: 15px; border: 1px solid var(--gold); max-width: 450px; margin: auto; text-align: center; }
+        h1 { color: var(--gold); text-transform: uppercase; margin-bottom: 5px; font-size: 1.5rem; }
+        .subtitle { margin-bottom: 20px; font-size: 0.9rem; opacity: 0.8; }
+        .input-group { text-align: left; margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; color: var(--gold); font-size: 0.9rem; font-weight: bold; }
+        input { width: 100%; padding: 12px; border-radius: 5px; border: 1px solid #444; background: #333; color: white; box-sizing: border-box; font-size: 1rem; }
+        .result-box { background: var(--gold); color: var(--dark); padding: 15px; border-radius: 10px; margin: 20px 0; display: none; border-left: 5px solid #000; }
+        .price { font-size: 2.5rem; font-weight: bold; display: block; }
+        .btn { display: block; width: 100%; padding: 15px; border-radius: 5px; font-weight: bold; text-decoration: none; border: none; cursor: pointer; font-size: 1.1rem; margin-top: 10px; }
+        .btn-wa { background: var(--gold); color: var(--dark); }
+        .btn-call { background: transparent; border: 1px solid var(--gold); color: var(--gold); }
     </style>
 </head>
-<body class="bg-gray-50 font-sans text-gray-900">
+<body>
 
-    <!-- Header / Navigation -->
-    <nav class="bg-black text-white p-4 sticky top-0 z-50 border-b-2 border-yellow-500">
-        <div class="container mx-auto flex justify-between items-center">
-            <div class="leading-tight">
-                <span class="text-2xl font-black text-yellow-500 italic uppercase">Van Paris Prestige</span>
-                <p class="text-xs text-gray-400">Services 95 • 92 • 78 • Aéroports</p>
-            </div>
-            <a href="tel:+33600000000" class="bg-yellow-500 text-black px-5 py-2 rounded-md font-bold hover:bg-yellow-400">
-                <i class="fa-solid fa-phone"></i> Appeler
-            </a>
-        </div>
-    </nav>
+<div class="container">
+    <h1>Taxi Van Paris</h1>
+    <p class="subtitle">Transport de Prestige - Van 1-8 Passagers</p>
 
-    <!-- Hero -->
-    <header class="hero-bg py-20 text-center text-white px-4">
-        <h1 class="text-3xl md:text-5xl font-extrabold mb-4 uppercase">Réservation Van Île-de-France</h1>
-        <p class="text-lg md:text-xl mb-6 text-yellow-400 font-semibold">Spécialiste Famille : Sièges Bébé & Réhausseurs Gratuits</p>
-        <div class="flex flex-wrap justify-center gap-2 text-sm">
-            <span class="bg-white/20 px-3 py-1 rounded-full border border-white/30">Val-d'Oise (95)</span>
-            <span class="bg-white/20 px-3 py-1 rounded-full border border-white/30">Hauts-de-Seine (92)</span>
-            <span class="bg-white/20 px-3 py-1 rounded-full border border-white/30">Yvelines (78)</span>
-        </div>
-    </header>
+    <div class="input-group">
+        <label>📍 Lieu de prise en charge</label>
+        <input type="text" id="dep" placeholder="Ex: Gare du Nord, Paris...">
+    </div>
 
-    <!-- Calculateur de Prix -->
-    <section id="devis" class="container mx-auto px-4 -mt-10 mb-12">
-        <div class="max-w-xl mx-auto bg-white rounded-xl shadow-2xl p-6 border-t-4 border-yellow-500">
-            <h2 class="text-xl font-bold mb-6 text-center uppercase tracking-wide">Calculateur de prix immédiat</h2>
-            
-            <div class="space-y-5">
-                <div>
-                    <label class="block text-sm font-bold text-gray-600 mb-1">Nombre de kilomètres estimés :</label>
-                    <input type="number" id="distance" placeholder="Entrez la distance (ex: 30)" 
-                           class="w-full p-4 border-2 border-gray-100 rounded-xl bg-gray-50 focus:border-yellow-500 outline-none text-lg">
-                </div>
+    <div class="input-group">
+        <label>🏁 Destination</label>
+        <input type="text" id="arr" placeholder="Ex: Roissy CDG, Orly...">
+    </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                    <div class="flex items-center p-3 border rounded-xl bg-yellow-50 border-yellow-100">
-                        <i class="fa-solid fa-baby text-yellow-600 mr-3 text-xl"></i>
-                        <span class="text-sm font-bold">Siège Bébé (Offert)</span>
-                    </div>
-                    <div class="flex items-center p-3 border rounded-xl bg-yellow-50 border-yellow-100">
-                        <i class="fa-solid fa-child text-yellow-600 mr-3 text-xl"></i>
-                        <span class="text-sm font-bold">Réhausseur (Offert)</span>
-                    </div>
-                </div>
+    <div class="input-group">
+        <label>📱 Votre numéro de téléphone</label>
+        <input type="tel" id="tel_client" placeholder="06 00 00 00 00">
+    </div>
 
-                <div class="bg-black text-white p-5 rounded-xl text-center shadow-inner">
-                    <p class="text-yellow-500 text-xs font-bold uppercase mb-1">Estimation du tarif TTC</p>
-                    <div class="text-5xl font-black"><span id="totalPrice">15.00</span> €</div>
-                    <p class="text-[10px] text-gray-400 mt-2">*Base 15€ + 2.80€/km (Tarif indicatif)</p>
-                </div>
+    <button class="btn btn-wa" onclick="calculer()">Calculer mon tarif</button>
 
-                <a href="https://wa.me/33600000000?text=Bonjour, je souhaite réserver un van pour une course de..." 
-                   class="flex items-center justify-center w-full bg-green-600 text-white font-black py-4 rounded-xl text-lg shadow-lg hover:bg-green-700 transition">
-                    <i class="fa-brands fa-whatsapp mr-3 text-2xl"></i> RÉSERVER VIA WHATSAPP
-                </a>
-            </div>
-        </div>
-    </section>
+    <div id="resultat" class="result-box">
+        <span id="type-trajet">Tarif Estimé</span>
+        <span class="price" id="prix-final">0 €</span>
+        <small>Service Van Premium</small>
+    </div>
 
-    <!-- Services Section -->
-    <section class="container mx-auto px-4 py-8 bg-white rounded-3xl mb-12">
-        <h3 class="text-2xl font-black text-center mb-10 uppercase">Nos Trajets Fréquents</h3>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="p-6 border rounded-2xl text-center">
-                <i class="fa-solid fa-plane-departure text-3xl text-yellow-500 mb-4"></i>
-                <h4 class="font-bold mb-2">Aéroports</h4>
-                <p class="text-sm text-gray-600">Transferts vers Roissy CDG, Orly et Beauvais depuis tout le 95, 92 et 78.</p>
-            </div>
-            <div class="p-6 border rounded-2xl text-center">
-                <i class="fa-solid fa-train text-3xl text-yellow-500 mb-4"></i>
-                <h4 class="font-bold mb-2">Gares Parisiennes</h4>
-                <p class="text-sm text-gray-600">Gare du Nord, Gare de Lyon, Montparnasse et Gare de l'Est en Van 8 places.</p>
-            </div>
-            <div class="p-6 border rounded-2xl text-center">
-                <i class="fa-solid fa-users text-3xl text-yellow-500 mb-4"></i>
-                <h4 class="font-bold mb-2">Famille</h4>
-                <p class="text-sm text-gray-600">Équipements complets bébé et enfants disponibles sur simple demande.</p>
-            </div>
-        </div>
-    </section>
+    <button id="btn-reserver" class="btn btn-wa" style="display:none;" onclick="envoyerWhatsApp()">✅ Confirmer & Envoyer à Taxi Van</button>
+    <a href="tel:+33649553640" class="btn btn-call">📞 Appeler le 06 49 55 36 40</a>
+</div>
 
-    <footer class="bg-black text-white py-10 text-center">
-        <p class="font-bold uppercase tracking-widest text-yellow-500">Van Paris Prestige</p>
-        <p class="text-xs text-gray-500 mt-2">Zone de couverture : Val d'Oise, Hauts-de-Seine, Yvelines, Paris.</p>
-    </footer>
+<script>
+function calculer() {
+    const dep = document.getElementById('dep').value.toLowerCase();
+    const arr = document.getElementById('arr').value.toLowerCase();
+    const tel = document.getElementById('tel_client').value;
+    const resBox = document.getElementById('resultat');
+    const prixSpan = document.getElementById('prix-final');
+    const typeTrajet = document.getElementById('type-trajet');
+    const btnRes = document.getElementById('btn-reserver');
 
-    <script>
-        const distanceInput = document.getElementById('distance');
-        const priceDisplay = document.getElementById('totalPrice');
+    if (dep.length > 2 && arr.length > 2 && tel.length > 5) {
+        let prix = 0;
+        let label = "Estimation du trajet";
 
-        function calculate() {
-            const dist = parseFloat(distanceInput.value);
-            const base = 15; // Ton prix d'approche
-            const rate = 2.80; // Ton prix au km
-            
-            if (!isNaN(dist) && dist > 0) {
-                const total = base + (dist * rate);
-                priceDisplay.innerText = total.toFixed(2);
-            } else {
-                priceDisplay.innerText = "15.00";
-            }
+        // LOGIQUE FORFAITS AÉROPORTS
+        if (arr.includes("roissy") || arr.includes("cdg") || dep.includes("roissy") || dep.includes("cdg")) {
+            prix = 90;
+            label = "Forfait Paris ↔ Roissy CDG";
+        } 
+        else if (arr.includes("orly") || dep.includes("orly")) {
+            prix = 80;
+            label = "Forfait Paris ↔ Orly";
+        }
+        else {
+            // Simulation : 15€ base + 2.90€/km (base 15km par défaut)
+            prix = 15 + (15 * 2.90);
+            label = "Tarif Estimé (Base + Km)";
         }
 
-        distanceInput.addEventListener('input', calculate);
-    </script>
+        prixSpan.innerText = Math.round(prix) + " €";
+        typeTrajet.innerText = label;
+        resBox.style.display = "block";
+        btnRes.style.display = "block";
+    } else {
+        alert("Veuillez remplir les adresses et votre numéro de téléphone.");
+    }
+}
+
+function envoyerWhatsApp() {
+    const dep = document.getElementById('dep').value;
+    const arr = document.getElementById('arr').value;
+    const tel = document.getElementById('tel_client').value;
+    const prix = document.getElementById('prix-final').innerText;
+    
+    // Construction du message détaillé
+    const texte = `NOUVELLE RÉSERVATION TAXI VAN\n\n` +
+                  `📍 DÉPART : ${dep}\n` +
+                  `🏁 ARRIVÉE : ${arr}\n` +
+                  `💰 MONTANT : ${prix}\n` +
+                  `📱 CLIENT : ${tel}\n\n` +
+                  `Merci de me confirmer la prise en charge.`;
+                  
+    window.location.href = "https://wa.me/33649553640?text=" + encodeURIComponent(texte);
+}
+</script>
+
 </body>
 </html>
+
 
